@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* @import "pretendard/dist/web/static/pretendard.css"; */
+@layer base {
+  html {
+    font-family: 'Pretendard', sans-serif;
+  }
+}
+
+:root {
+    /* App Color */
+    --color-accent: var(--color-yellowgreen);
+    --color-text: var(--color-white);
+  
+    /* Color list */
+    --color-white: #ffffff;
+    --color-yellowgreen: #76f903;
+    --color-darkgray: #38383A;
+    --color-lightgray: #5E5D5D;
+  
+    /* size */
+    --max-size-width: 1200px;
+      height: 100%;
+
+    padding: 0;
+  } 
+  
+  /* 
+    Commons 
+  */
+  * {
+    box-sizing: border-box;
+    /* font-family: 'Open Sans', sans-serif; */
+  }
+  
+  body{
+    /* Font-Type */
+    margin: 0;
+    background: url('/images/midnight.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+  }
+  h1, h2, h3, p, ul, nav {
+    margin: 0;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    color: var(--color-white);
+  }
+
+  .animate-fadeDown {
+  animation: fadeDown 2s ease-out infinite;
+}
+
+@keyframes fadeDown {
+  0%   { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
