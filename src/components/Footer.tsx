@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer: React.FC<React.PropsWithChildren> = ({children}) => {
     return (
-        <footer id="contact" className="section">
+        <footer className="section">
             {children}
         </footer>
     );

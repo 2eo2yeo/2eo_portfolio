@@ -9,7 +9,7 @@ interface HomeProps {
 
 const Home: React.FC<HomeProps> = ({ logo }) => {
   return (
-      <section className="flex px-30 py-5">
+      <section className="flex px-30 pt-30 z-0">
         <div className="w-1/2 flex justify-center items-center">
           <div className='flex gap-10 flex-col'>
             <div>
@@ -31,7 +31,7 @@ const Home: React.FC<HomeProps> = ({ logo }) => {
             <img
               src={logo.img}
               alt="portfolio"
-              className="w-full h-auto"
+              className="w-full h-auto z-0"
             />
             {/* 프사 호버 */}
             <div className="absolute inset-0 group flex items-center justify-center">

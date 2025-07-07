@@ -3,7 +3,10 @@ import React from 'react';
 const About: React.FC = () => {
 
     return (
-        <div>
+        <div className='bg-[#38383A] w-full rouned'>
+            sdfsdadfsdfsadfsdfsdf
+            asdfasdfasdf
+            asdfasdfasdfasdfa
             
         </div>
     );

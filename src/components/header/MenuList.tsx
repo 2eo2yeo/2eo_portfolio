@@ -17,8 +17,8 @@ const MenuList: React.FC<MenuListProps> = ({ menuList }) => {
 
 
     return (
-       <nav className="fixed top-5 left-0 w-full flex justify-center z-50">
-      <ul className="flex border-2 border-[#34363A] rounded-full bg-[#010205]">
+       <nav>
+      <ul className="flex border-2 border-[#34363A] rounded-full bg-[#010205]/60">
                 {menuList.map((menu, index) => (
                     <li key={index}>
                         <MenuItem
@@ -36,6 +36,7 @@ const MenuList: React.FC<MenuListProps> = ({ menuList }) => {
             </ul>
         </nav>
     );
-}
+} 
 
 export default MenuList;
+
