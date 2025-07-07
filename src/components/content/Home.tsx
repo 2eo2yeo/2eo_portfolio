@@ -38,7 +38,6 @@ const Home: React.FC<HomeProps> = ({ logo }) => {
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300 z-0"></div>
               <p className="text-white text-3xl font-bold text-center z-10 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-3 transition-all duration-500">
                 안녕하세요! <br />
-                저는 발전하는 개발자 <br />
                 정서령입니다
               </p>
             </div>

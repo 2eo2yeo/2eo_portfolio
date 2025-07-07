@@ -1,0 +1,7 @@
+[
+    {"href": "#home", "name":"Home"},
+    {"href": "#about", "name":"About"},
+    {"href": "#skills", "name":"Skills"},
+    {"href": "#project", "name":"Project"},
+    {"href": "#contact", "name":"Contact"}
+]
