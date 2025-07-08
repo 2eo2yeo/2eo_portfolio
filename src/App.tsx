@@ -98,7 +98,11 @@ function App() {
 
         <Copyright />
       </Content>
-      <Footer></Footer>
+      <Footer>
+        <p>dfsdfasdfadf
+          asdfasdfasdfsdfasdfasdfsd
+        </p>
+      </Footer>
 
     </>
   )

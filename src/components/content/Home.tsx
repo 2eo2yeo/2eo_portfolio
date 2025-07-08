@@ -1,4 +1,6 @@
-import React from 'react';
+import { useScroll, useTransform, motion } from 'framer-motion';
+import { useRef } from 'react';
+
 import { Logo } from '@interfaces/common';
 import Contact from './Contact';
 import down from '../../assets/down.svg'
@@ -8,12 +10,29 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = ({ logo }) => {
+
+    const container = useRef<HTMLElement | null>(null);
+    
+    const { scrollYProgress } = useScroll({
+      target: container,
+      offset: ['start start', 'end start']
+    })
+
+    const y = useTransform(scrollYProgress, [0, 1], ["0vh", "150vh"])
+
+    
+
+
   return (
-      <section className="flex px-30 pt-30 z-0">
+    <div className='h-screen overflow-hidden'>
+
+   
+    <motion.div style={{y}} className='relative h-full'>
+       <section className="flex px-30 pt-30 z-0">
         <div className="w-1/2 flex justify-center items-center">
           <div className='flex gap-10 flex-col'>
             <div>
-              <p className="text-3xl text-[var(--color-yellowgreen)]">Front-End Developer</p>
+              <p className="text-3xl">Front-End Developer</p>
               <p className="text-7xl">{logo.name}</p>
 
             </div>
@@ -33,18 +52,13 @@ const Home: React.FC<HomeProps> = ({ logo }) => {
               alt="portfolio"
               className="w-full h-auto z-0"
             />
-            {/* 프사 호버 */}
-            <div className="absolute inset-0 group flex items-center justify-center">
-              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300 z-0"></div>
-              <p className="text-white text-3xl font-bold text-center z-10 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-3 transition-all duration-500">
-                안녕하세요! <br />
-                정서령입니다
-              </p>
-            </div>
+
 
           </div>
         </div>
       </section>
+      </motion.div>
+       </div>
   );
 }
 
