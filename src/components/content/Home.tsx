@@ -11,7 +11,7 @@ interface HomeProps {
 
 const Home: React.FC<HomeProps> = ({ logo }) => {
 
-    const container = useRef<HTMLElement | null>(null);
+    const container = useRef<HTMLDivElement | null>(null);
     
     const { scrollYProgress } = useScroll({
       target: container,
@@ -20,20 +20,18 @@ const Home: React.FC<HomeProps> = ({ logo }) => {
 
     const y = useTransform(scrollYProgress, [0, 1], ["0vh", "150vh"])
 
-    
-
 
   return (
     <div className='h-screen overflow-hidden'>
 
    
-    <motion.div style={{y}} className='relative h-full'>
+    <motion.div ref={container} style={{y}} className='relative h-full'>
        <section className="flex px-30 pt-30 z-0">
         <div className="w-1/2 flex justify-center items-center">
           <div className='flex gap-10 flex-col'>
             <div>
               <p className="text-3xl">Front-End Developer</p>
-              <p className="text-7xl">{logo.name}</p>
+              <div className="text-7xl text-outline">{logo.name}</div>
 
             </div>
             <Contact />

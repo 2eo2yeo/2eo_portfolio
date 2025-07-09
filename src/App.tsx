@@ -99,9 +99,7 @@ function App() {
         <Copyright />
       </Content>
       <Footer>
-        <p>dfsdfasdfadf
-          asdfasdfasdfsdfasdfasdfsd
-        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, et ipsa reiciendis dignissimos ducimus ex cum aperiam odit quisquam voluptatibus exercitationem ipsum omnis, libero nostrum officia eos explicabo dolor atque.</p>
       </Footer>
 
     </>

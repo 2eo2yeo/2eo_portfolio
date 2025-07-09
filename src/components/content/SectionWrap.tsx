@@ -13,30 +13,33 @@ const SectionWrap: React.FC<SectionWrapProps> = ({ id, title, description, child
 
     useEffect(() => {
         if (typeof window === 'undefined') return;
-
         const lenis = new Lenis();
-
         function raf(time: number) {
             lenis.raf(time);
             requestAnimationFrame(raf);
         }
-
         requestAnimationFrame(raf);
     }, []);
+
+
 
 
     return (
         <section
             id={id}
-            className={`relative isolate z-10 w-full rounded-t-2xl ${id === 'about' ? ' h-screen bg-[#38383A]' : ''
-                }`}
+            className={`
+    relative isolate z-10 w-full
+    ${id === 'about' ? 'h-screen bg-gradient-to-b from-[#2c2c2e]/100 via-[#2c2c2e]/90 to-[#2c2c2e]/70' : ''}
+    ${id === 'skills' ? 'h-screen bg-gradient-to-b from-[#2c2c2e]/70 to-[#2c2c2e]/30' : ''}
+    ${id === 'project' ? 'bg-gradient-to-b from-[#2c2c2e]/30 to-[#2c2c2e]/[whatever]' : ''}
+  `}
         >
             {/* 내부 콘텐츠 영역 */}
-            <div className="p-5 max-w-[1200px] mx-auto relative z-10">
-                <h2 className="py-15 text-6xl text-white font-bold ">
-                    <span className='highlight'>{title}</span>
-                    </h2>
-                <p className="text-lg text-white">{description}</p>
+            <div className="p-5 max-w-[1200px] mx-auto relative z-10 ">
+                <div className="py-10 text-6xl text-outline text-center">
+                    {title}
+                </div>
+                <p className="text-lg text-white text-center">{description}</p>
                 {children}
             </div>
         </section>
