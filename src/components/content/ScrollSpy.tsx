@@ -36,7 +36,7 @@ const ScrollSpy: React.FC<ScrollSpyProps> = ({ items }) => {
     <div
       key={item.no}
       className={`flex items-center gap-3 pl-4 py-2 transition-all duration-300 border-l-2 
-        ${activeId === item.no ? 'border-yellow-400' : 'border-white/20'}
+        ${activeId === item.no ? 'border-white-400' : 'border-white/20'}
       `}
     >
       <a
@@ -50,7 +50,7 @@ const ScrollSpy: React.FC<ScrollSpyProps> = ({ items }) => {
           }
         }}
         className={`block text-sm font-medium transition-all duration-300 ${
-          activeId === item.no ? 'text-yellow-400' : 'text-white/50'
+          activeId === item.no ? 'text-white-400' : 'text-white/50'
         }`}
       >
         {item.name}

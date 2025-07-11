@@ -104,7 +104,7 @@
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
 }
 
-/* 카드 뒷면 공통 스타일도 분리해두면 깔끔함 */
+
 .skill-card-back {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
@@ -117,3 +117,23 @@
   backface-visibility: hidden;
   transform: rotateY(180deg);
 }
+
+.skill-card-black {
+  background-color: rgba(0, 0, 0, 0.7);
+  
+  color: white;
+  /* border-radius: 2rem; */
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  backface-visibility: hidden;
+  /* transform: rotateY(180deg); */
+}
+
+::selection {
+  background-color: #a8e673;
+  color: #1a1a1a; 
+}
+
+
+

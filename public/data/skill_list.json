@@ -14,7 +14,7 @@
     { "name": "Express", "description":"", "link": "/images/skills/express.png" },
     { "name": "MySQL", "description":"", "link": "/images/skills/mysql.png" }
   ],
-  "Tools": [
+  "ETC": [
     { "name": "Git", "description":"", "link": "/images/skills/git.png" },
     { "name": "GitHub", "description":"", "link": "/images/skills/github.png" },
     { "name": "SourceTree", "description":"", "link": "/images/skills/sourcetree.png" },

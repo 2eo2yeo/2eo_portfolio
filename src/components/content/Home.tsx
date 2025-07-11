@@ -18,7 +18,7 @@ const Home: React.FC<HomeProps> = ({ logo }) => {
       offset: ['start start', 'end start']
     })
 
-    const y = useTransform(scrollYProgress, [0, 1], ["0vh", "150vh"])
+    const y = useTransform(scrollYProgress, [0, 1], ["0vh", "100vh"])
 
 
   return (

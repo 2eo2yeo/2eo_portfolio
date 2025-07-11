@@ -35,7 +35,7 @@ const SectionWrap: React.FC<SectionWrapProps> = ({ id, title, description, child
   `}
         >
             {/* 내부 콘텐츠 영역 */}
-            <div className="p-5 max-w-[1200px] mx-auto relative z-10 ">
+            <div className="pt-25 max-w-[1200px] mx-auto relative z-10 ">
                 <div className="py-10 text-6xl text-outline text-center">
                     {title}
                 </div>

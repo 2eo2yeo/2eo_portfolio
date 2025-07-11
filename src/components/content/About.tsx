@@ -31,10 +31,7 @@ const About: React.FC = () => {
     return (
         <div className='flex flex-col justify-center gap-5 text-white '>
             <div>
-                <p className='text-5xl py-10'>
-                    안녕하세요 <br />
-                    정서령 입니다.
-                </p>
+                
                 <div>
                     <div className="my-10 p-0 flex items-center text-center w-full gap-3">
                         {introduce.map((item, idx) => (
