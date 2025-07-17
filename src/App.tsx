@@ -5,19 +5,20 @@ import axios from 'axios';
 import Header from './components/Header';
 import Content from './components/Content';
 import Footer from './components/Footer';
-import Home from './components/content/Home';
+import Home from './pages/Home';
 import Copyright from './components/content/Copyright';
 import MenuList from './components/header/MenuList';
 import SectionWrap from './components/content/SectionWrap';
-import About from './components/content/About';
-import Introduce from './components/content/Introduce';
-import Skills from './components/content/Skills';
-import ProgressBar from './components/content/ProgressBar';
-import ProjectList from './components/content/ProjectList';
-import ProjectDetail from './components/content/ProjectDetail';
+import About from './pages/About';
+import Skills from './pages/Skills';
+import Projects from './pages/Projects';
+// import ProjectList from './components/content/ProjectList';
 import './style.css'
 
+
+
 function App() {
+
 
 
   const [menuList, setMenuList] = useState([]);
@@ -50,12 +51,10 @@ function App() {
 
 
   const componentMap: Record<string, React.ElementType> = {
+    Home,
     About,
-    Introduce,
     Skills,
-    ProgressBar,
-    ProjectList,
-    ProjectDetail
+    Projects
   };
 
   const renderComponent = (childObj: ComponentNode): React.ReactNode => {

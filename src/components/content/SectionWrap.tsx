@@ -29,8 +29,8 @@ const SectionWrap: React.FC<SectionWrapProps> = ({ id, title, description, child
             id={id}
             className={`
     relative isolate z-10 w-full
-    ${id === 'about' ? 'h-screen bg-gradient-to-b from-[#2c2c2e]/100 via-[#2c2c2e]/90 to-[#2c2c2e]/70' : ''}
-    ${id === 'skills' ? 'h-screen bg-gradient-to-b from-[#2c2c2e]/70 to-[#2c2c2e]/30' : ''}
+    ${id === 'about' ? 'min-h-screen bg-gradient-to-b from-[#2c2c2e]/100 via-[#2c2c2e]/90 to-[#2c2c2e]/70' : ''}
+    ${id === 'skills' ? 'min-h-screen bg-gradient-to-b from-[#2c2c2e]/70 to-[#2c2c2e]/30' : ''}
     ${id === 'project' ? 'bg-gradient-to-b from-[#2c2c2e]/30 to-[#2c2c2e]/[whatever]' : ''}
   `}
         >

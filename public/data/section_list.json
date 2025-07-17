@@ -23,9 +23,8 @@
       "title": "PROJECTS",
       "description": "클릭하여 상세보기",
       "children": [
-        { "component": "ProgressBar" },
-        { "component": "ProjectList" },
-        { "component": "ProjectDetail" }
+        { "component": "Projects" },
+        { "component": "ProjectItem" }
       ]
     }
   ]

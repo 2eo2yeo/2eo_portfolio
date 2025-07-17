@@ -46,15 +46,18 @@
   */
   * {
     box-sizing: border-box;
+      scroll-behavior: smooth;
     /* font-family: 'Open Sans', sans-serif; */
   }
   
+
   body{
     /* Font-Type */
     margin: 0;
     background: url('/images/midnight.jpg') no-repeat center/cover;
     background-attachment: fixed;
   }
+  
   h1, h2, h3, p, ul, nav {
     margin: 0;
   }
@@ -79,7 +82,11 @@
   100% { opacity: 1; transform: translateY(0); }
 }
 
-
+@media (hover: hover) {
+  .group:hover .skill-card-inner {
+    transform: rotateY(180deg);
+  }
+}
 
 
 .skill-card {
@@ -105,30 +112,6 @@
 }
 
 
-.skill-card-back {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border-radius: 2rem;
-  padding: 0.75rem;
-  text-align: center;
-  font-size: 0.875rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
-}
-
-.skill-card-black {
-  background-color: rgba(0, 0, 0, 0.7);
-  
-  color: white;
-  /* border-radius: 2rem; */
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  backface-visibility: hidden;
-  /* transform: rotateY(180deg); */
-}
 
 ::selection {
   background-color: #a8e673;
@@ -137,3 +120,10 @@
 
 
 
+.scroll-area::-webkit-scrollbar {
+  width: 8px;
+}
+.scroll-area::-webkit-scrollbar-thumb {
+  background-color: #a8e673;
+  border-radius: 4px;
+}
