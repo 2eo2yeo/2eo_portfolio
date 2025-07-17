@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import IntroduceCardList from "../components/about/IntroduceCardList";
-import { motion } from "framer-motion";
-import MarqueeLink from "@components/about/MarqueeLink";
 
 
 interface IntroduceItem {

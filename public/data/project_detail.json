@@ -12,23 +12,31 @@
       ],
     "steps": [
       {
-        "img": "/images/projects/jinair.png",
-        "desc": "메인 페이지 - 사용자 로그인 및 항공권 검색"
+        "img": "/images/projects/portfolioss1.png",
+        "desc": "HERO - 소셜 아이콘, framer-motion 활용한 페럴릭스 효과"
       },
       {
-        "img": "/images/projects/jinair.png",
-        "desc": "예약 페이지 - 항공편 선택 및 쿠폰 "
+        "img": "/images/projects/portfolioss2.png",
+        "desc": "ABOUT ME - 클릭하여 상세내용 토글, 이메일 주소복제 등"
       },
       {
-        "img": "/images/projects/jinair.png",
-        "desc": "마이페이지 - 예약 내역, 쿠폰 사용 확인"
+        "img": "/images/projects/portfolioss3.png",
+        "desc": "Skills - 카드형 아이콘 뒤집기, "
+      },
+      {
+        "img": "/images/projects/portfolioss4.png",
+        "desc": "Projects 1 - 프로젝트 리스트"
+      },
+      {
+        "img": "/images/projects/portfolioss5.png",
+        "desc": "Projects 2 - 프로젝트 상세내용 모달창, 스크린샷 캐러셀"
       }
     ]
   },
   "jinair": {
     "korname" : "진에어",
     "period": "2025.03 ~ 2025.04",
-    "goal": "항공권 예약 시스템을 구현하는 것을 목표로 개발한 5인 팀 프로젝트",
+    "goal": "실제 항공권 예매사이트 진에어를 벤치마킹하여 항공권 예약 시스템을 기획,개발,구현하는 것을 목표로 개발한 5인 팀 프로젝트",
     "stack": ["React", "Node.js", "MySQL","Sass","Express","Redux"],
     "role": "팀장 / 마이페이지, 맞춤 항공권 페이지",
     "result": [
@@ -45,17 +53,34 @@
       ],
     "steps": [
       {
-        "img": "/images/projects/jinair.png",
-        "desc": "메인 페이지 - 사용자 로그인 및 항공권 검색"
+        "img": "/images/projects/jinairss1.png",
+        "desc": "마이페이지 첫 화면, 상단 네비게이션"
       },
       {
-        "img": "/images/projects/jinair.png",
-        "desc": "예약 페이지 - 항공편 선택 및 쿠폰 적용"
+        "img": "/images/projects/jinairss2.png",
+        "desc": "나의 예약 - 출발일 기준 예약내역, 지난예약, 예약상태 등 확인"
       },
       {
-        "img": "/images/projects/jinair.png",
-        "desc": "마이페이지 - 예약 내역, 쿠폰 사용 확인"
+        "img": "/images/projects/jinairss3.png",
+        "desc": "1:1 문의 내역 확인 (나의문의, 관리자 답변, 상태 등)"
+      },
+      {
+        "img": "/images/projects/jinairss4.png",
+        "desc": "관심지역 설정"
+      },
+      {
+        "img": "/images/projects/jinairss5.png",
+        "desc": "나의 사용 가능 쿠폰"
+      },
+      {
+        "img": "/images/projects/jinairss6.png",
+        "desc": "관심지역 기반 맞춤 항공권"
+      },
+      {
+        "img": "/images/projects/jinairss7.png",
+        "desc": "회원정보수정"
       }
+
     ]
   },
     "beautyofjoseon": {
@@ -67,7 +92,7 @@
      "result": [
       "- 상품 목록, 상세 페이지, 리뷰 관련 REST API 개발 ",
       "- React Context 기반 전역 상태 관리 및 커스텀 Hook을 활용한 로직 모듈화",
-      "- 상품 목록/상세 페이지 전체 구현 및 필터링·정렬 기능 적용",
+      "- 상품 목록/상세 페이지 전체 구현 및 필터링·정렬, 페이지네이션 기능 적용",
       "- 장바구니 추가, 수량 조절 등 핵심 기능 설계 및 구현",
       "- 리뷰 작성 모달 및 이미지 업로드(Multer, 미리보기 제공) 구현",
       "- 로그인 기반 위시리스트 중복 방지 및 상태 동기화 처리",
@@ -76,16 +101,24 @@
       ],
     "steps": [
       {
-        "img": "/images/projects/jinair.png",
-        "desc": "메인 페이지 - 사용자 로그인 및 항공권 검색"
+        "img": "/images/projects/beautyss1.png",
+        "desc": "상품목록 - 카테고리, 정렬, 위시리스트 동기화"
       },
       {
-        "img": "/images/projects/jinair.png",
-        "desc": "예약 페이지 - 항공편 선택 및 쿠폰 적용"
+        "img": "/images/projects/beautyss2.png",
+        "desc": "상품상세 - 대표이미지 Slider 적용"
       },
       {
-        "img": "/images/projects/jinair.png",
-        "desc": "마이페이지 - 예약 내역, 쿠폰 사용 확인"
+        "img": "/images/projects/beautyss3.png",
+        "desc": "상품상세 - 장바구니 담기, 수량 조절, 찜하기 "
+      },
+      {
+        "img": "/images/projects/beautyss4.png",
+        "desc": "리뷰 - 리뷰리스트 클릭하여 리뷰 내역 보기"
+      },
+      {
+        "img": "/images/projects/beautyss5.png",
+        "desc": "리뷰 작성 모달, 리뷰 이미지 업로드"
       }
     ]
   },
@@ -110,16 +143,24 @@
       ],
     "steps": [
       {
-        "img": "/images/projects/jinair.png",
-        "desc": "메인 페이지 - 사용자 로그인 및 항공권 검색"
+        "img": "/images/projects/kurlyss1.png",
+        "desc": "장바구니 - 전체·개별선택 및 삭제, 수량 조절, 결제금액 합산 등 "
       },
       {
-        "img": "/images/projects/jinair.png",
-        "desc": "예약 페이지 - 항공편 선택 및 쿠폰 적용"
+        "img": "/images/projects/kurlyss2.png",
+        "desc": "배송지 변경 모달 - DaumPostcode API으로 주소 검색, DB회원 주소 수정"
       },
       {
-        "img": "/images/projects/jinair.png",
-        "desc": "마이페이지 - 예약 내역, 쿠폰 사용 확인"
+        "img": "/images/projects/kurlyss3.png",
+        "desc": "결제 상단 - 결제 전 상품 정보 토글, 주문자 정보"
+      },
+      {
+        "img": "/images/projects/kurlyss4.png",
+        "desc": "결제 하단 - 토스페이먼츠 API연동"
+      },
+      {
+        "img": "/images/projects/kurlyss5.png",
+        "desc": "토스페이먼츠 API 결제 QR 화면"
       }
     ]
   }

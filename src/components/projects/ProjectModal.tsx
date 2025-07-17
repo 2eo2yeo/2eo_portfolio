@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
 import axios from "axios";
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 interface ProjectDetailProps {
@@ -40,14 +42,18 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ id, isOpen, onClose }) =>
 
 
 
-useEffect(() => {
-  if (!id) return;
-  axios("/data/project_detail.json")
-    .then((res) => setDetail(res.data[id]))
-    .catch((err) => console.error(err));
-}, [id]);
+
+  useEffect(() => {
+    if (!id) return;
+    axios("/data/project_detail.json")
+      .then((res) => setDetail(res.data[id]))
+      .catch((err) => console.error(err));
+  }, [id]);
 
 
+
+
+  
   return (
     <Modal
       isOpen={isOpen}
@@ -72,16 +78,16 @@ useEffect(() => {
 
 
 
-              <div className="flex flex-wrap gap-2 my-2 mb-5">
-                {detail.stack.map((tech, i) => (
-                  <span
-                    key={i}
-                    className="px-2 py-1 bg-[var(--color-yellowgreen)] rounded text-sm text-black"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+            <div className="flex flex-wrap gap-2 my-2 mb-5">
+              {detail.stack.map((tech, i) => (
+                <span
+                  key={i}
+                  className="px-2 py-1 bg-[var(--color-yellowgreen)] rounded text-sm text-black"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
 
             {/* 정보 출력 */}
             <ul className="!list-disc !pl-5 space-y-3">
@@ -98,19 +104,34 @@ useEffect(() => {
               <li>
                 <h2 className="text-xl">{fieldLabels.result}</h2>
                 <p className="whitespace-pre-line"> {/* 줄바꿈 */}
-  {detail.result.join('\n')}
-</p>
+                  {detail.result.join('\n')}
+                </p>
               </li>
             </ul>
 
-            <div className="mt-6 space-y-8 text-center">
-              {detail.steps.map((step, i) => (
-                <div key={i}>
-                  <img src={step.img} alt={step.desc} className="rounded mb-1 mx-auto max-w-[700px]" />
-                  <p>[{step.desc}]</p>
-                </div>
-              ))}
+            <div className="my-15 relative max-w-[700px] h-[400px] mx-auto">
+              <Slider
+                arrows={true}
+                infinite={true}
+                speed={500}
+                slidesToShow={1}
+                slidesToScroll={1}
+                className="w-full mx-auto"
+              >
+                {detail.steps.map((step, i) => (
+                <div key={i} className="h-[400px] flex items-center justify-center">
+      <img
+        src={step.img}
+        alt={step.desc}
+        className="block mx-auto max-h-full object-contain"
+      />
+      <p className="text-center mt-2 py-5">[{step.desc}]</p>
+    </div>
+                ))}
+              </Slider>
             </div>
+
+
           </div>
 
         </>
