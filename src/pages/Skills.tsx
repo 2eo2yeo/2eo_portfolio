@@ -14,7 +14,7 @@ const Skills: React.FC = () => {
   const [skillList, setSkillList] = useState<SkillList>({});
 
   useEffect(() => {
-    axios("/data/skill_list.json")
+    axios("data/skill_list.json")
       .then((res) => setSkillList(res.data))
       .catch((err) => console.error(err));
   }, []);

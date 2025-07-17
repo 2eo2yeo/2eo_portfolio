@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
   const [linkList, setLinkList] = useState<LinkItem[]>([]);
 
   useEffect(() => {
-    axios('/data/link_icons.json')
+    axios('data/link_icons.json')
       .then((res) => setLinkList(res.data))
       .catch((err) => console.error(err))
   }, []);

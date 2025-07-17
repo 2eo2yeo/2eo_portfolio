@@ -45,7 +45,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ id, isOpen, onClose }) =>
 
   useEffect(() => {
     if (!id) return;
-    axios("/data/project_detail.json")
+    axios("data/project_detail.json")
       .then((res) => setDetail(res.data[id]))
       .catch((err) => console.error(err));
   }, [id]);

@@ -16,7 +16,7 @@ const About: React.FC = () => {
   const [introduce, setIntroduce] = useState<IntroduceItem[]>([]);
 
   useEffect(() => {
-    axios("/data/introduce.json")
+    axios("data/introduce.json")
       .then((res) => setIntroduce(res.data))
       .catch((error) => console.log(error));
   }, []);

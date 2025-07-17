@@ -20,7 +20,7 @@ const ProjectHoverMenu: React.FC = () => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
 
   useEffect(() => {
-    axios("/data/project_list.json")
+    axios("data/project_list.json")
       .then((res) => setProjects(res.data))
       .catch((err) => console.error(err));
   }, []);

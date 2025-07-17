@@ -1,24 +1,24 @@
 {
   "Front-end": [
-    { "name": "JavaScript", "description":"자바스크립트", "link": "/images/skills/javascript.png" },
-    { "name": "TypeScript", "description":"타입스크립트", "link": "/images/skills/typescript.png" },
-    { "name": "React", "description":"", "link": "/images/skills/react.png" },
-    { "name": "Tailwind CSS", "description":"", "link": "/images/skills/tailwind.png" },
-    { "name": "SCSS", "description":"", "link": "/images/skills/scss.png" },
-    { "name": "CSS", "description":"", "link": "/images/skills/css.png" },
-    { "name": "Framer Motion", "description":"", "link": "/images/skills/framer.png" },
-    { "name": "Redux", "description":"", "link": "/images/skills/redux.png" }
+    { "name": "JavaScript", "description":"자바스크립트", "link": "images/skills/javascript.png" },
+    { "name": "TypeScript", "description":"타입스크립트", "link": "images/skills/typescript.png" },
+    { "name": "React", "description":"", "link": "images/skills/react.png" },
+    { "name": "Tailwind CSS", "description":"", "link": "images/skills/tailwind.png" },
+    { "name": "SCSS", "description":"", "link": "images/skills/scss.png" },
+    { "name": "CSS", "description":"", "link": "images/skills/css.png" },
+    { "name": "Framer Motion", "description":"", "link": "images/skills/framer.png" },
+    { "name": "Redux", "description":"", "link": "images/skills/redux.png" }
   ],
   "Back-end": [
-    { "name": "Node.js", "description":"", "link": "/images/skills/node.png" },
-    { "name": "Express", "description":"", "link": "/images/skills/express.png" },
-    { "name": "MySQL", "description":"", "link": "/images/skills/mysql.png" }
+    { "name": "Node.js", "description":"", "link": "images/skills/node.png" },
+    { "name": "Express", "description":"", "link": "images/skills/express.png" },
+    { "name": "MySQL", "description":"", "link": "images/skills/mysql.png" }
   ],
   "ETC": [
-    { "name": "Git", "description":"", "link": "/images/skills/git.png" },
-    { "name": "GitHub", "description":"", "link": "/images/skills/github.png" },
-    { "name": "SourceTree", "description":"", "link": "/images/skills/sourcetree.png" },
-    { "name": "AWS", "description":"", "link": "/images/skills/aws.png" },
-    { "name": "Notion", "description":"", "link": "/images/skills/notion.png" }
+    { "name": "Git", "description":"", "link": "images/skills/git.png" },
+    { "name": "GitHub", "description":"", "link": "images/skills/github.png" },
+    { "name": "SourceTree", "description":"", "link": "images/skills/sourcetree.png" },
+    { "name": "AWS", "description":"", "link": "images/skills/aws.png" },
+    { "name": "Notion", "description":"", "link": "images/skills/notion.png" }
   ]
 }
