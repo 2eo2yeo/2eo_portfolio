@@ -36,7 +36,7 @@ const Home: React.FC<HomeProps> = ({ logo }) => {
             <Contact />
             {/* 아래 화살표 */}
             <div className='flex justify-center items-center animate-fadeDown pt-20 '>
-              <img className='w-15 h-12 ' src="/svgs/down.svg" />
+              <img className='w-15 h-12 ' src="svgs/down.svg" />
             </div>
           </div>
 

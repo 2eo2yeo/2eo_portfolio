@@ -6,6 +6,7 @@ import * as path from 'path';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss(),],
+  base: '/2eo_portfolio/',
    resolve: {
     alias: {
       '@interfaces': path.resolve(__dirname, 'src/interfaces'),
