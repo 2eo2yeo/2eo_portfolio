@@ -1,0 +1,22 @@
+[
+  {
+    "name": "githubMain",
+    "icon": "/svgs/github.svg",
+    "link": "https://github.com/2eo2yeo"
+  },
+  {
+    "name": "githubBlog",
+    "icon": "/svgs/blogger.svg",
+    "link": "https://2eo2yeo.github.io/"
+  },
+  {
+    "name": "naverBlog",
+    "icon": "/svgs/naverblog.svg",
+    "link": "https://blog.naver.com/2eo2yeo/"
+  },
+  {
+    "name": "youtube",
+    "icon": "/svgs/youtube.svg",
+    "link": "https://www.youtube.com/@2eo22"
+  }
+]

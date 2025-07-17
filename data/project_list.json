@@ -1,0 +1,46 @@
+ [
+    {
+        "id": "portfolio", 
+        "name": "2eo_Portfolio", 
+        "img": "/images/projects/portfolioss1.png", 
+        "source": "https://github.com/2eo2yeo/2eo_portfolio", 
+        "description": "포트폴리오",
+        "type" : "개인",
+        "skills" : [
+            "typescript","React","tailwindCSS"
+        ]
+    },
+    { 
+        "id": "jinair", 
+        "name": "Jinair", 
+        "img": "/images/projects/jinairss1.png", 
+        "source": "https://github.com/2eo2yeo/jinAir", 
+        "description": "항공권 예매",
+        "type" : "팀",
+        "skills" : [
+            "JavaScript","React","SASS","MySQL","Node.JS"
+        ] 
+    },
+    { 
+        "id": "beautyofjoseon", 
+        "name": "Beauty of Joseon", 
+        "img": "/images/projects/beautyss1.png", 
+        "source": "https://github.com/2eo2yeo/beautyofjoseon", 
+        "description": "이커머스",
+        "type" : "팀",
+        "skills" : [
+            "JavaScript","React","SASS","MySQL","Node.JS"
+        ] 
+    },
+    { 
+        "id": "kurly", 
+        "name": "Kurly", 
+        "img": "/images/projects/jinair.png", 
+        "source": "https://github.com/2eo2yeo/kurly", 
+        "description": "이커머스",
+        "type" : "팀",
+        "skills" : [
+            "JavaScript","React","SASS","MySQL","Node.JS"
+        ]
+    }
+  ]
