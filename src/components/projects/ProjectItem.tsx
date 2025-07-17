@@ -99,7 +99,7 @@ const ProjectHoverItem: React.FC<LinkProps> = ({
           onClick={(e) => e.stopPropagation()}
           className="relative z-10 p-2 text-white hover:text-[var(--color-yellowgreen)] inline-block mt-2"
         >
-          <FiGithub className="text-2xl" />
+          <FiGithub className="text-4xl" />
         </a>
       </div>
 
